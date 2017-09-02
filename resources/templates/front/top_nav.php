@@ -16,7 +16,7 @@
                         <a href="shop.php">Wszystkie produkty</a>
                     </li>
                     <li>
-                        <a href="cms_login.php">Login</a>
+                        <a href="cms_login.php">cms</a>
                     </li>
                     
                      <li>
@@ -27,11 +27,21 @@
                         <a href="contact.php">Kontakt</a>
                     </li>
 					<li>
-                        <a href="login.php">Logowanie</a>
-                    </li>
-					<li>
                         <a href="register.php">Rejestracja</a>
                     </li>
+					<form id="signin" class="navbar-form navbar-right" role="form">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">                                        
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Login</button>
+                   </form>
 
                 </ul>
                 

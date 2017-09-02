@@ -6,13 +6,13 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img class="slide-image" src="http://darstore.000webhostapp.com/images/karuzela1.png" alt="">
+                                    <img class="slide-image" src="images/karuzela1.png" alt="">
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="http://darstore.000webhostapp.com/images/karuzela2.jpg" alt="">
+                                    <img class="slide-image" src="images/karuzela2.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="http://darstore.000webhostapp.com/images/karuzela3.jpg" alt="">
+                                    <img class="slide-image" src="images/karuzela3.jpg" alt="">
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
