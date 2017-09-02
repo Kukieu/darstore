@@ -16,7 +16,7 @@
                         <a href="shop.php">Wszystkie produkty</a>
                     </li>
                     <li>
-                        <a href="login.php">Login</a>
+                        <a href="cms_login.php">Login</a>
                     </li>
                     
                      <li>
@@ -25,6 +25,12 @@
                     </li>
                     <li>
                         <a href="contact.php">Kontakt</a>
+                    </li>
+					<li>
+                        <a href="login.php">Logowanie</a>
+                    </li>
+					<li>
+                        <a href="register.php">Rejestracja</a>
                     </li>
 
                 </ul>
