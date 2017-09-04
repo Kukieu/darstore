@@ -242,6 +242,49 @@ function login_user(){
 		}
 	}
 }
+function show_login_area(){
+	
+					if(isset($_SESSION['email']) == null){
+					$login_area = <<<DELIMETER
+					<form id="signin" class="navbar-form navbar-right" role="form">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Adres e-mail">                                        
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Hasło">                                        
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Login</button>
+                   </form>
+DELIMETER;
+					
+					return $login_area;
+		}else {
+			return null;
+		}	
+	}
+/*function show_dropdown_area(){
+	
+					if(isset($_SESSION['email']) != null){
+					$dropdown_area = <<<DELIMETER
+					 <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><?php echo " " . $_SESSION['username'] ?><b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                       
+                        <li class="divider"></li>
+                        <li>
+                            <a href="logout.php"><i class="fa fa-fw fa-power-off"></i> Wyloguj</a>
+                        </li>
+                    </ul>
+                </li>
+DELIMETER;
+					
+					return $dropdown_area;
+		}	
+	}*/
 
 function send_message(){
 	if(isset($_POST['submit'])){
