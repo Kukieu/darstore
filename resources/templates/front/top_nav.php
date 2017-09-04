@@ -29,19 +29,29 @@
 					<li>
                         <a href="register.php">Rejestracja</a>
                     </li>
+					<?php login_user();
+					function show_login_area(){
+					$login_area = <<<DELIMETER
 					<form id="signin" class="navbar-form navbar-right" role="form">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">                                        
+                            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Adres e-mail">                                        
                         </div>
 
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
+                            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Hasło">                                        
                         </div>
 
                         <button type="submit" class="btn btn-primary">Login</button>
                    </form>
+DELIMETER;
+					
+					return $login_area;
+					}
+				
+				   ?>
+				   
 					<h4 class="text-center bg-warning" ><?php display_message(); ?></h4>
                 </ul>
                 
