@@ -16,7 +16,7 @@
                         <a href="shop.php">Wszystkie produkty</a>
                     </li>
                     <li>
-                        <a href="cms_login.php">cms</a>
+                        <a href="login_cms.php">cms</a>
                     </li>
                     
                      <li>
@@ -42,7 +42,7 @@
 
                         <button type="submit" class="btn btn-primary">Login</button>
                    </form>
-
+					<h4 class="text-center bg-warning" ><?php display_message(); ?></h4>
                 </ul>
                 
             </div>

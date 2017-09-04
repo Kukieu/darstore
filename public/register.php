@@ -25,7 +25,7 @@
 						<label for="myName">Hasło</label>
 						<input id="myName" name="myName" class="form-control" type="text" data-validation="required">
 						<span id="error_name" class="text-danger"></span>
-						<h6>Hasło musi się składać przynajmniej z 8 znaków oraz zawierać małe i duże litery, cyfry i znaki specjalne</h6>
+						<font size="1">Hasło musi się składać przynajmniej z 8 znaków oraz zawierać małe i duże litery, cyfry i znaki specjalne.</font>
 					</div>
 					<div class="form-group">
 						<label for="myName">Powtórz hasło</label>

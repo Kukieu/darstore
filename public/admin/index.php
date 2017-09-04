@@ -66,6 +66,11 @@ if(isset($_GET['reports'])){
 	include(TEMPLATE_BACK . DS . "reports.php");
 	
 }
+if(isset($_GET['admins'])){
+	
+	include(TEMPLATE_BACK . DS . "admins.php");
+	
+}
 
 ?>
 

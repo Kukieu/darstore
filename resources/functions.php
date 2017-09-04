@@ -198,6 +198,28 @@ DELIMETER;
 	}
 }
 
+function login_cms(){
+	
+	if(isset($_POST['submit'])){
+		
+		$username = escape_string($_POST['username']);
+		$password = escape_string($_POST['password']);
+		
+		$query = query("SELECT * FROM admins WHERE username = '{$username}' AND password = '{$password}'");
+		confirm($query);
+		
+		if(mysqli_num_rows($query) == 0) {
+			
+			set_message("Taki login lub hasło nie istnieje");
+			redirect("login_cms.php");
+		}else {
+			
+			$_SESSION['username'] = $username;
+			//set_message("Zalogowano pomyślnie");
+			redirect("admin/index.php?orders");
+		}
+	}
+}
 function login_user(){
 	
 	if(isset($_POST['submit'])){
@@ -216,7 +238,7 @@ function login_user(){
 			
 			$_SESSION['username'] = $username;
 			//set_message("Zalogowano pomyślnie");
-			redirect("admin/index.php?orders");
+			redirect("index.php");
 		}
 	}
 }

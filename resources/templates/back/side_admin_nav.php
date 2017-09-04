@@ -22,6 +22,9 @@
 					<li class="">
                         <a href="index.php?users"><i class="fa fa-fw fa-dashboard"></i> Użytkownicy</a>
                     </li>
+					<li class="">
+                        <a href="index.php?admins"><i class="fa fa-fw fa-dashboard"></i> Administracja</a>
+                    </li>
                     
                 
                 </ul>
