@@ -33,6 +33,40 @@
 						<span id="error_name" class="text-danger"></span>
 					</div>
 					<div class="form-group">
+						<label for="myName">Imię</label>
+						<input id="myName" name="myName" class="form-control" type="text" data-validation="required">
+						<span id="error_name" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label for="myName">Nazwisko</label>
+						<input id="myName" name="myName" class="form-control" type="text" data-validation="required">
+						<span id="error_name" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label for="myName">Adres dostawy</label>
+						<input id="myName" name="myName" class="form-control" type="text" placeholder="Ulica" data-validation="required">
+						<span id="error_name" class="text-danger"></span>
+						<input id="myName" name="myName" class="form-control" type="text" placeholder="Numer budynku" data-validation="required">
+						<span id="error_name" class="text-danger"></span>
+						<input id="myName" name="myName" class="form-control" type="text" placeholder="Numer mieszkania" data-validation="required">
+						<span id="error_name" class="text-danger"></span>
+						<input id="myName" name="myName" class="form-control" type="text" placeholder="Kod pocztowy" data-validation="required">
+						<span id="error_name" class="text-danger"></span>
+						<input id="myName" name="myName" class="form-control" type="text" placeholder="Miasto" data-validation="required">
+						<span id="error_name" class="text-danger"></span>
+						<input id="myName" name="myName" class="form-control" type="text" placeholder="" data-validation="required">
+						<span id="error_name" class="text-danger"></span>
+						<input id="myName" name="myName" class="form-control" type="text" placeholder="Województwo" data-validation="required">
+						<span id="error_name" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label for="myName">Dane kontaktowe</label>
+						<input id="myName" name="myName" class="form-control" type="text" placeholder="Telefon" data-validation="required">
+						<span id="error_name" class="text-danger"></span>
+						<input id="myName" name="myName" class="form-control" type="text" placeholder="Telefon komórkowy" data-validation="required">
+						<span id="error_name" class="text-danger"></span>
+					</div>
+					<div class="form-group">
 						<label for="dob">Data urodzin</label>
 						<input type="date" name="dob" id="dob" class="form-control">
 						<span id="error_dob" class="text-danger"></span>

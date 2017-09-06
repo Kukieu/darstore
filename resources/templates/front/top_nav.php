@@ -29,10 +29,15 @@
 					<li>
                         <a href="register.php">Rejestracja</a>
                     </li>
-					<?php echo show_login_area();login_user();?>
+					</ul>
+					<?php 
+					echo show_login_area();
+					login_user();
+					echo show_dropdown_area();
+					?>
 					
-					<h4 class="text-center bg-warning" ><?php display_message(); ?></h4>
-                </ul>
+					<!---<h4 class="text-center bg-warning" ><?php display_message(); ?></h4>---->
+                
                 
             </div>
             <!-- /.navbar-collapse -->

@@ -222,10 +222,12 @@ function login_cms(){
 }
 function login_user(){
 	
-	if(isset($_POST['submit'])){
+	if(isset($_POST['submit_user'])){
 		
-		$email = escape_string($_POST['email']);
-		$password = escape_string($_POST['password']);
+		$email = ($_POST['email']);
+		$password = ($_POST['password']);
+		
+		
 		
 		$query = query("SELECT * FROM users WHERE email = '{$email}' AND password = '{$password}'");
 		confirm($query);
@@ -233,18 +235,16 @@ function login_user(){
 		if(mysqli_num_rows($query) == 0) {
 			
 			set_message("Taki login lub hasło nie istnieje");
-			redirect("login.php");
+			//redirect("login.php");
 		}else {
 			
 			$_SESSION['email'] = $email;
 			//set_message("Zalogowano pomyślnie");
-			redirect("index.php");
+			//redirect("index.php");
 		}
 	}
 }
 function show_login_area(){
-	
-					if(isset($_SESSION['email']) == null){
 					$login_area = <<<DELIMETER
 					<form id="signin" class="navbar-form navbar-right" role="form">
                         <div class="input-group">
@@ -257,34 +257,42 @@ function show_login_area(){
                             <input id="password" type="password" class="form-control" name="password" value="" placeholder="Hasło">                                        
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="submit_user" class="btn btn-primary">Login</button>
                    </form>
 DELIMETER;
-					
-					return $login_area;
-		}else {
-			return null;
-		}	
-	}
-/*function show_dropdown_area(){
+$email = 'stiekerosiem@gmail.com';
+//$_SESSION['email'] = $email;
+					if(!isset($_SESSION['email']))
+					{
+						
+						echo $login_area;
+		}
+		else
+		{
+			return;
+		}
+	}	
 	
-					if(isset($_SESSION['email']) != null){
+function show_dropdown_area(){
 					$dropdown_area = <<<DELIMETER
+					<ul class="nav navbar-nav navbar-right">
 					 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><?php echo " " . $_SESSION['username'] ?><b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                       
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><b class="caret"></b></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
                         <li class="divider"></li>
                         <li>
-                            <a href="logout.php"><i class="fa fa-fw fa-power-off"></i> Wyloguj</a>
+                            <a href="admin/logout.php"><i class="fa fa-fw fa-power-off"></i> Wyloguj</a>
                         </li>
                     </ul>
                 </li>
+				</ul>
 DELIMETER;
+					if(isset($_SESSION['email'])){
+					
 					
 					return $dropdown_area;
 		}	
-	}*/
+	}
 
 function send_message(){
 	if(isset($_POST['submit'])){
