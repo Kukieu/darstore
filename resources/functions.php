@@ -222,11 +222,11 @@ function login_cms(){
 }
 function login_user(){
 	
-	if(isset($_POST['submit_user'])){
+	if(isset($_POST['submit'])){
 		
 		$email = ($_POST['email']);
 		$password = ($_POST['password']);
-		
+		//$_SESSION['email'] = $email;
 		
 		
 		$query = query("SELECT * FROM users WHERE email = '{$email}' AND password = '{$password}'");
@@ -245,8 +245,10 @@ function login_user(){
 	}
 }
 function show_login_area(){
+					login_user();
 					$login_area = <<<DELIMETER
-					<form id="signin" class="navbar-form navbar-right" role="form">
+					<form action="" method="post" class="navbar-form navbar-right">
+					
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input id="email" type="email" class="form-control" name="email" value="" placeholder="Adres e-mail">                                        
@@ -256,21 +258,23 @@ function show_login_area(){
                             <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                             <input id="password" type="password" class="form-control" name="password" value="" placeholder="Hasło">                                        
                         </div>
-
-                        <button type="submit_user" class="btn btn-primary">Login</button>
+					<div class="form-group">
+                  <input type="submit" class="btn btn-primary" >
+				  
+					</div>
                    </form>
 DELIMETER;
-$email = 'stiekerosiem@gmail.com';
+//$email = 'stiekerosiem@gmail.com';
 //$_SESSION['email'] = $email;
 					if(!isset($_SESSION['email']))
 					{
 						
 						echo $login_area;
-		}
-		else
-		{
-			return;
-		}
+					}
+					else
+					{
+					return;
+					}
 	}	
 	
 function show_dropdown_area(){

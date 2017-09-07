@@ -30,13 +30,13 @@
                         <a href="register.php">Rejestracja</a>
                     </li>
 					</ul>
-					<?php 
+					<?php 		
 					echo show_login_area();
-					login_user();
+					
 					echo show_dropdown_area();
 					?>
 					
-					<!---<h4 class="text-center bg-warning" ><?php display_message(); ?></h4>---->
+					<h4 class="text-center bg-warning" ><?php display_message(); ?></h4>
                 
                 
             </div>
