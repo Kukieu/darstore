@@ -25,6 +25,9 @@
 					<li>
                         <a href="register.php">Rejestracja</a>
                     </li>
+					<li>
+                        <a href="terms.php">Regulamin</a>
+                    </li>
 					</ul>
 					<?php 		
 					echo show_login_area();
