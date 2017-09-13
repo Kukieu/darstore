@@ -9,7 +9,7 @@
     <meta name="author" content="">
     
 
-    <title>Darstore</title>
+    <title>Frizzies</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">

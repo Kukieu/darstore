@@ -1,6 +1,6 @@
 <div class="container">
 
-        <hr>
+        
 
         <!-- Footer -->
         <footer>
@@ -8,16 +8,27 @@
 <link href="css/footer.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 <!-- // -->
-<div class="container">
-    <hr>
+<footer class="footer-distributed">
+    <!---<hr class="hr-footer" />--->
         <div class="text-center center-block">
-            <br />
-                <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-	            <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+            
+                <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	            <a href="https://instagram.com"><i id="social-in" class="fa fa-instagram fa-3x social"></i></a>
 	            <a href="https://www.youtube.com/channel/UCjn9l43xn4vgen_UK50TP3g"><i id="social-gp" class="fa fa-youtube-square fa-3x social"></i></a>
-	            <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+	            <a href="mailto:stiekerosiem@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
 </div>
-    <hr>
+<div class="footer-center">
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1 555 123456</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
+			</div>
 </div>
 
 <br />
