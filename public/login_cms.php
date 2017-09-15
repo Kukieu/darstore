@@ -32,5 +32,3 @@
 
 
         </div>
-
-<?php include(TEMPLATE_FRONT . DS . "footer.php") ?>

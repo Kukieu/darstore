@@ -6,14 +6,10 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img class="slide-image" src="images/karuzela1.png" alt="">
+                                    <img class="slide-image" src="images/carousel/karuzela1.png" alt="">
                                 </div>
-                                <div class="item">
-                                    <img class="slide-image" src="images/karuzela2.jpg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="slide-image" src="images/karuzela3.jpg" alt="">
-                                </div>
+                                
+								<?php echo get_slides()?>
                             </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left"></span>

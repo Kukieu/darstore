@@ -1,3 +1,0 @@
-1. Dodawanie wielu zdjec i tworzenie folderu dziala tylko trzeba ścieżki później zmienić.
-2. Displaye wszystkie to też ścieżki trzeba
-3. w item.php wiele zdjęć

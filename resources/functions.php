@@ -122,7 +122,7 @@ while($row = fetch_array($query)){
 						
 $categories_links = <<<DELIMETER
 	
-<a href='category.php?id={$row['cat_id']}' class='list-group-item'>{$row['cat_title']}</a>	
+<a href='category.php?id={$row['cat_id']}' class='list-group-item list-group-item-success'>{$row['cat_title']}</a>
 
 DELIMETER;
 
@@ -607,5 +607,37 @@ DELIMETER;
 		
 		echo $report;
 	}		
+}
+function add_slides(){
+	
+}
+
+function get_current_slide() {
+	
+}
+function get_active() {
+	
+}
+function get_slides() {
+	$query = query("SELECT * FROM slides");
+	confirm($query);
+	
+	while($row = fetch_array($query)){
+		
+$slides = <<<DELIMETER
+<div class="item">
+		<img class="slide-image" src="images/carousel/karuzela2.jpg" alt="">
+</div>
+
+DELIMETER;
+	
+echo $slides;	
+		
+	}
+	
+}
+function get_slide_thumbnails() {
+	
+	
 }
 ?>
