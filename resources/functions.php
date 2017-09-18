@@ -260,7 +260,7 @@ function show_login_area(){
                             <input id="password" type="password" class="form-control" name="password" value="" placeholder="Hasło">                                        
                         </div>
 					<div class="form-group">
-                  <input type="submit" class="btn btn-primary" >
+                  <input type="button" value="Zaloguj" class="btn btn-primary" >
 				  
 					</div>
                    </form>
@@ -608,6 +608,8 @@ DELIMETER;
 		echo $report;
 	}		
 }
+
+/*---------------------------------------------------SLIDES*/
 function add_slides(){
 	
 }
@@ -640,4 +642,5 @@ function get_slide_thumbnails() {
 	
 	
 }
+/*---------------------------------------------------END SLIDES*/
 ?>
