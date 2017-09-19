@@ -28,11 +28,14 @@
 					<li>
                         <a href="terms.php">Regulamin</a>
                     </li>
+					<li>
+                        <a href="login/main_login.php">Zaloguj się</a>
+                    </li>
 					</ul>
 					<?php 		
-					echo show_login_area();
-					
-					echo show_dropdown_area();
+					/*echo show_login_area();
+					*/
+					echo show_dropdown_area(); 
 					?>
 					
 					<h4 class="text-center bg-warning" ><?php display_message(); ?></h4>

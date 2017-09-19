@@ -286,13 +286,14 @@ function show_dropdown_area(){
                     <ul class="dropdown-menu dropdown-menu-right">
                         <li class="divider"></li>
                         <li>
-                            <a href="admin/logout.php"><i class="fa fa-fw fa-power-off"></i> Wyloguj</a>
+                            <a href="login/logout.php"><i class="fa fa-fw fa-power-off"></i> Wyloguj</a>
+							
                         </li>
                     </ul>
                 </li>
 				</ul>
 DELIMETER;
-					if(isset($_SESSION['email'])){
+					if(isset($_SESSION['username'])){
 					
 					
 					return $dropdown_area;
