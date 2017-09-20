@@ -23,18 +23,14 @@
                         <a href="contact.php">Kontakt</a>
                     </li>
 					<li>
-                        <a href="register.php">Rejestracja</a>
-                    </li>
-					<li>
                         <a href="terms.php">Regulamin</a>
                     </li>
-					<li>
-                        <a href="login/main_login.php">Zaloguj się</a>
-                    </li>
-					</ul>
 					<?php 		
-					/*echo show_login_area();
-					*/
+					echo show_login_area();
+					?>
+					</ul>
+					<?php 
+					
 					echo show_dropdown_area(); 
 					?>
 					

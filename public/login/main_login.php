@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 if (isset($_SESSION['username'])) {
     header("location:../index.php");
@@ -8,7 +9,7 @@ if (isset($_SESSION['username'])) {
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Login</title>
+    <title>Frizzies Logowanie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="../css/bootstrap.css" rel="stylesheet" media="screen">
@@ -19,16 +20,16 @@ if (isset($_SESSION['username'])) {
     <div class="container">
 
       <form class="form-signin" name="form1" method="post" action="checklogin.php">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <input name="myusername" id="myusername" type="text" class="form-control" placeholder="Username" autofocus>
-        <input name="mypassword" id="mypassword" type="password" class="form-control" placeholder="Password">
+        <h2 class="form-signin-heading">Zaloguj się</h2>
+        <input name="myusername" id="myusername" type="text" class="form-control" placeholder="Nazwa użytkownika" autofocus>
+        <input name="mypassword" id="mypassword" type="password" class="form-control" placeholder="Hasło">
         <!-- The checkbox remember me is not implemented yet...
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> Remember me
         </label>
         -->
-        <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-	    <a href="signup.php" name="Sign Up" id="signup" class="btn btn-lg btn-primary btn-block" type="submit">Create new account</a>
+        <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Zaloguj</button>
+	    <!--<a href="signup.php" name="Sign Up" id="signup" class="btn btn-lg btn-primary btn-block" type="submit">Create new account</a>-->
 
         <div id="message"></div>
       </form>

@@ -248,26 +248,14 @@ function login_user(){
 function show_login_area(){
 					login_user();
 					$login_area = <<<DELIMETER
-					<form action="" method="post" class="navbar-form navbar-right">
-					
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Adres e-mail">                                        
-                        </div>
-
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Hasło">                                        
-                        </div>
-					<div class="form-group">
-                  <input type="button" value="Zaloguj" class="btn btn-primary" >
-				  
-					</div>
-                   </form>
+					<li>
+                        <a href="login/signup.php">Rejestracja</a>
+                    </li>
+					<li>
+                        <a href="login/main_login.php">Zaloguj się</a>
+                    </li>
 DELIMETER;
-//$email = 'stiekerosiem@gmail.com';
-//$_SESSION['email'] = $email;
-					if(!isset($_SESSION['email']))
+					if(!isset($_SESSION['username']))
 					{
 						
 						echo $login_area;
@@ -279,15 +267,16 @@ DELIMETER;
 	}	
 	
 function show_dropdown_area(){
+					error_reporting(E_ERROR);
+					$users_nick = $_SESSION['username'];
 					$dropdown_area = <<<DELIMETER
 					<ul class="nav navbar-nav navbar-right">
 					 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">$users_nick <i class="fa fa-user"></i><b class="caret"></b></a>
                     <ul class="dropdown-menu dropdown-menu-right">
                         <li class="divider"></li>
                         <li>
                             <a href="login/logout.php"><i class="fa fa-fw fa-power-off"></i> Wyloguj</a>
-							
                         </li>
                     </ul>
                 </li>
@@ -295,7 +284,7 @@ function show_dropdown_area(){
 DELIMETER;
 					if(isset($_SESSION['username'])){
 					
-					
+
 					return $dropdown_area;
 		}	
 	}

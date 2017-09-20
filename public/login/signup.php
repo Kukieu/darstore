@@ -12,7 +12,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Signup</title>
+    <title>Frizzies Rejestracja</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="../css/bootstrap.css" rel="stylesheet" media="screen">
@@ -23,14 +23,14 @@
     <div class="container">
 
       <form class="form-signup" id="usersignup" name="usersignup" method="post" action="createuser.php">
-        <h2 class="form-signup-heading">Register</h2>
-        <input name="newuser" id="newuser" type="text" class="form-control" placeholder="Username" autofocus>
+        <h2 class="form-signup-heading">Rejestracja</h2>
+        <input name="newuser" id="newuser" type="text" class="form-control" placeholder="Nazwa użytkownika" autofocus>
         <input name="email" id="email" type="text" class="form-control" placeholder="Email">
 <br>
-        <input name="password1" id="password1" type="password" class="form-control" placeholder="Password">
-        <input name="password2" id="password2" type="password" class="form-control" placeholder="Repeat Password">
+        <input name="password1" id="password1" type="password" class="form-control" placeholder="Hasło">
+        <input name="password2" id="password2" type="password" class="form-control" placeholder="Powtórz hasło">
 
-        <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+        <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Zarejestruj</button>
 
         <div id="message"></div>
       </form>
