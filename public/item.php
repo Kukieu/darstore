@@ -66,7 +66,7 @@ $query = query(" SELECT * FROM products WHERE product_id = " . escape_string($_G
         <hr>
         <h4 class=""><?php echo $row['product_price'] . " zł";?></h4>
 
-    <div class="ratings">
+    <!--<div class="ratings">
      
         <p>
             <span class="glyphicon glyphicon-star"></span>
@@ -76,7 +76,7 @@ $query = query(" SELECT * FROM products WHERE product_id = " . escape_string($_G
             <span class="glyphicon glyphicon-star-empty"></span>
             4.0 stars
         </p>
-    </div>
+    </div>-->
           
         <p><?php echo $row['short_desc'];?></p>
 
@@ -107,7 +107,7 @@ $query = query(" SELECT * FROM products WHERE product_id = " . escape_string($_G
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Reviews</a></li>
+   <!-- <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Reviews</a></li> -->
 
   </ul>
 
@@ -117,7 +117,11 @@ $query = query(" SELECT * FROM products WHERE product_id = " . escape_string($_G
 
 <p></p>
            
-    <p><?php echo $row['product_description'];?></p>
+    <p><pre><?php 
+	$product_description_temp = $row['product_description'];
+	$product_description = $product_description_temp; 
+	echo $product_description; 
+	?></pre></p>
 
     </div>
     <div role="tabpanel" class="tab-pane" id="profile">
