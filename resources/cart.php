@@ -86,7 +86,7 @@ $quantity = 1;
 		$product = <<<DELIMETER
 		<tr>
 				<td>{$row['product_title']}<br>
-				<img width='100' height='100' src='../resources/{$product_image}'>
+				<img width='100' height='100' src='../resources/uploads/{$row['product_id']}/{$product_image}'>
 				</td>
                 <td>{$row['product_price']} zł</td>
                 <td>{$value}</td>

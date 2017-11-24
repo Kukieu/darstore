@@ -6,10 +6,10 @@ if(isset($_GET['id'])) {
 	confirm($query);
 	
 	set_message("Użytkownik skasowany");
-	redirect("../../../admin/index.php?users");
+	redirect("../../../public/admin/index.php?users");
 } else {
 	
-	redirect("../../../admin/index.php?users");
+	redirect("../../../public/admin/index.php?users");
 }
 
 ?>

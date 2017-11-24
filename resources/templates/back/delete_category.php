@@ -6,10 +6,10 @@ if(isset($_GET['id'])) {
 	confirm($query);
 	
 	set_message("Kategoria skasowana");
-	redirect("../../../admin/index.php?categories");
+	redirect("../../../public/admin/index.php?categories");
 } else {
 	
-	redirect("../../../admin/index.php?categories");
+	redirect("../../../public/admin/index.php?categories");
 }
 
 ?>

@@ -122,7 +122,7 @@ while($row = fetch_array($query)){
 						
 $categories_links = <<<DELIMETER
 	
-<a href='category.php?id={$row['cat_id']}' class='list-group-item list-group-item-success'>{$row['cat_title']}</a>
+<a href='category.php?id={$row['cat_id']}' class='list-group-item cat_in_grey'>{$row['cat_title']}</a>
 
 DELIMETER;
 
@@ -146,7 +146,7 @@ function get_products_in_cat_page(){
 		
 <div class="col-sm-4 col-lg-4 col-md-4 text-left">
 <div class="thumbnail">
-<a href="item.php?id={$row['product_id']}"><img src="../resources/uploads/{$product_image}" alt="" style="width:360px;height:400px"></a>
+<a href="item.php?id={$row['product_id']}"><img src="../resources/uploads/{$row['product_id']}/{$product_image}" alt="" style="width:360px;height:400px"></a>
 <div class="caption">
 <h4 class="pull-right">{$row['product_price']} zł</h4>
 <h4><a href="item.php?id={$row['product_id']}">{$row['product_title']}</a>
@@ -619,6 +619,7 @@ function get_slides() {
 $slides = <<<DELIMETER
 <div class="item">
 		<img class="slide-image" src="images/carousel/karuzela2.jpg" alt="">
+		
 </div>
 
 DELIMETER;

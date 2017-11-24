@@ -6,10 +6,10 @@ if(isset($_GET['id'])) {
 	confirm($query);
 	
 	set_message("Raport skasowany");
-	redirect("../../../admin/index.php?reports");
+	redirect("../../../public/admin/index.php?reports");
 } else {
 	
-	redirect("../../../admin/index.php?reports");
+	redirect("../../../public/admin/index.php?reports");
 }
 
 ?>

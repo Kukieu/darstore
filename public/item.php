@@ -8,7 +8,7 @@
        <!-- Side Navigation -->
 
 	   
-           <?php include(TEMPLATE_FRONT . DS . "side_nav.php") ?>
+           <?php //include(TEMPLATE_FRONT . DS . "side_nav.php") ?>
 		   
 <?php 
 
@@ -28,7 +28,7 @@ $query = query(" SELECT * FROM products WHERE product_id = " . escape_string($_G
 <div class="row">
 
     <div class="col-md-7">
-       <!-- Tutaj start testu -->
+       
 
  <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -52,7 +52,7 @@ $query = query(" SELECT * FROM products WHERE product_id = " . escape_string($_G
     </div>    
 </div>
 	
-	<!-- Tutaj koniec testu -->
+	
     </div> 
 	
 	
@@ -62,7 +62,7 @@ $query = query(" SELECT * FROM products WHERE product_id = " . escape_string($_G
          
 
     <div class="caption-full">
-        <h4><a href="#"><?php echo $row['product_title'];?></a> </h4>
+        <h4><a href="#"><?php echo $row['product_title'];?></a></h4> <p class="well well-sm text-right">Pozostało <?php echo $row['product_quantity'];?> sztuk</p>
         <hr>
         <h4 class=""><?php echo $row['product_price'] . " zł";?></h4>
 

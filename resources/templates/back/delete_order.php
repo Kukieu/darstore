@@ -6,10 +6,10 @@ if(isset($_GET['id'])) {
 	confirm($query);
 	
 	set_message("Zamówienie skasowane");
-	redirect("../../../admin/index.php?orders");
+	redirect("../../../public/admin/index.php?orders");
 } else {
 	
-	redirect("../../../admin/index.php?orders");
+	redirect("../../../public/admin/index.php?orders");
 }
 
 ?>
