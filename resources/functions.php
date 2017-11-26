@@ -390,6 +390,11 @@ if(isset($_POST['publish'])){
 	$product_quantity 		= escape_string($_POST['product_quantity']);
 	$product_description 	= escape_string($_POST['product_description']);
 	$short_desc				= escape_string($_POST['short_desc']);
+	$product_color			= escape_string($_POST['product_color']);
+	$product_cap_type		= escape_string($_POST['product_cap_type']);
+	$product_tip			= escape_string($_POST['product_tip']);
+	$product_density		= escape_string($_POST['product_density']);
+	$product_length			= escape_string($_POST['product_length']);
 	$product_image 			= escape_string($_FILES['file1']['name']);
 	$add_image_2 			= escape_string($_FILES['file2']['name']);
 	$add_image_3  			= escape_string($_FILES['file3']['name']);
@@ -407,8 +412,8 @@ if(isset($_POST['publish'])){
 
 
 	
-	$query = query("INSERT INTO products(product_title, product_category_id, product_price, product_quantity, product_description, short_desc, product_image, add_image_2, add_image_3, add_image_4, add_image_5) 
-	VALUES('{$product_title}', '{$product_category_id}', '{$product_price}', '{$product_quantity}', '{$product_description}', '{$short_desc}', '{$product_image}', '{$add_image_2}', '{$add_image_3}', '{$add_image_4}', '{$add_image_5}')");
+	$query = query("INSERT INTO products(product_title, product_category_id, product_price, product_quantity, product_description, short_desc, product_color, product_cap_type, product_tip, product_density, product_length, product_image, add_image_2, add_image_3, add_image_4, add_image_5) 
+	VALUES('{$product_title}', '{$product_category_id}', '{$product_price}', '{$product_quantity}', '{$product_description}', '{$short_desc}', '{$product_color}', '{$product_cap_type}', '{$product_tip}', '{$product_density}', '{$product_length}', '{$product_image}', '{$add_image_2}', '{$add_image_3}', '{$add_image_4}', '{$add_image_5}')");
 	confirm($query);
 	$path = last_id();
 	
