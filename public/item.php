@@ -44,11 +44,11 @@ $query = query(" SELECT * FROM products WHERE product_id = " . escape_string($_G
 </div>
 <div class="container">
     <div class="row img-responsive">
-        <div class="col-md-1"><img style="width:100%; height:auto; cursor:pointer;" src="../resources/uploads/<?php echo $row['product_id']; ?>/<?php echo display_image($row['product_image']);?>"></div>
-        <div class="col-md-1"><img style="width:100%; height:auto; cursor:pointer;" src="../resources/uploads/<?php echo $row['product_id']; ?>/<?php echo display_image($row['add_image_2']);?>"></div>
-        <div class="col-md-1"><img style="width:100%; height:auto; cursor:pointer;" src="../resources/uploads/<?php echo $row['product_id']; ?>/<?php echo display_image($row['add_image_3']);?>"></div>
-		<div class="col-md-1"><img style="width:100%; height:auto; cursor:pointer;" src="../resources/uploads/<?php echo $row['product_id']; ?>/<?php echo display_image($row['add_image_4']);?>"></div>
-		<div class="col-md-1"><img style="width:100%; height:auto; cursor:pointer;" src="../resources/uploads/<?php echo $row['product_id']; ?>/<?php echo display_image($row['add_image_5']);?>"></div>
+        <div class="col-md-1"><img class="img-responsive" style="width:100%; height:auto; cursor:pointer;" src="../resources/uploads/<?php echo $row['product_id']; ?>/<?php echo display_image($row['product_image']);?>"></div>
+        <div class="col-md-1"><img class="img-responsive" style="width:100%; height:auto; cursor:pointer;" src="../resources/uploads/<?php echo $row['product_id']; ?>/<?php echo display_image($row['add_image_2']);?>"></div>
+        <div class="col-md-1"><img class="img-responsive" style="width:100%; height:auto; cursor:pointer;" src="../resources/uploads/<?php echo $row['product_id']; ?>/<?php echo display_image($row['add_image_3']);?>"></div>
+		<div class="col-md-1"><img class="img-responsive" style="width:100%; height:auto; cursor:pointer;" src="../resources/uploads/<?php echo $row['product_id']; ?>/<?php echo display_image($row['add_image_4']);?>"></div>
+		<div class="col-md-1"><img class="img-responsive" style="width:100%; height:auto; cursor:pointer;" src="../resources/uploads/<?php echo $row['product_id']; ?>/<?php echo display_image($row['add_image_5']);?>"></div>
     </div>    
 </div>
 	
@@ -101,12 +101,37 @@ $query = query(" SELECT * FROM products WHERE product_id = " . escape_string($_G
 <!--Row for Tab Panel-->
 
 <div class="row">
+<!-- TABELA ------------------------------------------------------------------------------------------------------------------>
+
+
+<div class="tg-wrap table-responsive"><table class="table table-striped">
+  <tr>
+    <th class="tg-yw4l">Kolor</th>
+    <th class="tg-yw4l"><?php echo $row['product_color'];?></th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Rodzaj czepka</td>
+    <td class="tg-yw4l"><?php echo $row['product_cap_type'];?></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Czubek głowy / przedziałek</td>
+    <td class="tg-yw4l"><?php echo $row['product_tip'];?></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Gęstość</td>
+    <td class="tg-yw4l"><?php echo $row['product_density'];?></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Długość</td>
+    <td class="tg-yw4l"><?php echo $row['product_length'];?></td>
+  </tr>
+</table></div>
+
 
 <div role="tabpanel">
-
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Więcej informacji</a></li>
    <!-- <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Reviews</a></li> -->
 
   </ul>
@@ -115,7 +140,6 @@ $query = query(" SELECT * FROM products WHERE product_id = " . escape_string($_G
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="home">
 
-<p></p>
            
     <p><pre><?php 
 	$product_description_temp = $row['product_description'];
