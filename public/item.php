@@ -142,8 +142,8 @@ $query = query(" SELECT * FROM products WHERE product_id = " . escape_string($_G
 
            
     <p><pre><?php 
-	$product_description_temp = $row['product_description'];
-	$product_description = $product_description_temp; 
+	$product_description = $row['product_description'];
+	//$product_description = $product_description_temp; 
 	echo $product_description; 
 	?></pre></p>
 

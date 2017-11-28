@@ -459,6 +459,11 @@ if(isset($_POST['update'])){
 	$product_quantity 		= escape_string($_POST['product_quantity']);
 	$product_description 	= escape_string($_POST['product_description']);
 	$short_desc				= escape_string($_POST['short_desc']);
+	$product_color			= escape_string($_POST['product_color']);
+	$product_cap_type		= escape_string($_POST['product_cap_type']);
+	$product_tip			= escape_string($_POST['product_tip']);
+	$product_density		= escape_string($_POST['product_density']);
+	$product_length			= escape_string($_POST['product_length']);
 	$product_image 			= escape_string($_FILES['file']['name']);
 	$image_temp_location	= $_FILES['file']['tmp_name'];					//bez escape string bo był problem
 	
@@ -484,6 +489,11 @@ if(isset($_POST['update'])){
 	$query .= "product_quantity 		= '{$product_quantity}'		, ";
 	$query .= "product_description 		= '{$product_description}'	, ";
 	$query .= "short_desc 				= '{$short_desc}'			, ";
+	$query .= "product_color 			= '{$product_color}'		, ";
+	$query .= "product_cap_type 		= '{$product_cap_type}'		, ";
+	$query .= "product_tip 				= '{$product_tip}'			, ";
+	$query .= "product_density 			= '{$product_density}'		, ";
+	$query .= "product_length 			= '{$product_length}'		, ";
 	$query .= "product_image 			= '{$product_image}'		  ";
 	$query .= "WHERE product_id=" . escape_string($_GET['id']);
 	

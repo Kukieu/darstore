@@ -9,6 +9,11 @@ if(isset($_GET['id'])){
 	$product_quantity 		= escape_string($row['product_quantity']);
 	$product_description 	= escape_string($row['product_description']);
 	$short_desc				= escape_string($row['short_desc']);
+	$product_color			= escape_string($row['product_color']);
+	$product_cap_type		= escape_string($row['product_cap_type']);
+	$product_tip			= escape_string($row['product_tip']);
+	$product_density		= escape_string($row['product_density']);
+	$product_length			= escape_string($row['product_length']);
 	$product_image 			= escape_string($row['product_image']);
 	
 	$product_image = display_image($row['product_image']);
@@ -53,14 +58,22 @@ update_product();
         <label for="product-price">Cena</label>
         <input type="number" step="any" name="product_price"  class="form-control" size="60" value="<?php echo $product_price; ?>">
       </div>
-    </div>
-
-
-
-
     
-    
-
+	<div class="col-xs-3">
+	  <label for="product-color">Kolor</label>
+      <input type="text" step="any" name="product_color"  class="form-control" size="60" value="<?php echo $product_color; ?>">
+	  <label for="product-color">Rodzaj czepka</label>
+      <input type="text" step="any" name="product_cap_type"  class="form-control" size="60" value="<?php echo $product_cap_type; ?>">
+	  
+	  <label for="product-color">Czubek głowy/przedziałek</label>
+      <input type="text" step="any" name="product_tip"  class="form-control" size="60" value="<?php echo $product_tip; ?>">
+	  <label for="product-color">Gęstość</label>
+      <input type="text" step="any" name="product_density"  class="form-control" size="60" value="<?php echo $product_density; ?>">
+	  
+	  <label for="product-color">Grubość</label>
+      <input type="text" step="any" name="product_length"  class="form-control" size="60" value="<?php echo $product_length; ?>">
+	</div>
+	</div>
 </div><!--Main Content-->
 
 
@@ -117,14 +130,14 @@ update_product();
       <textarea name="short_desc" id="" cols="30" rows="2" class="form-control" maxlength="24" placeholder="Maksymalnie 24 znaki"><?php echo $short_desc; ?></textarea>
     </div>
 	
-    <div class="form-group">
+    <!-- <div class="form-group">
         <label for="product-title">Obrazek produktu</label>
         <input type="file" name="file">
 		<br>
-		<img src="../../resources/<?php echo $product_image; ?>" width="200" height="160" >
+		<img src="../../resources/uploads/<?php echo $product_image; ?>" width="200" height="160" >
 		
       
-    </div>
+    </div>-->
 
 
 
